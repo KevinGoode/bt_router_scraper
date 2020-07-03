@@ -39,7 +39,7 @@ container-prompt> cd /usr/src/dist; rpm -Uvh <rpm-name>.noarch.rpm
  1. Execute as follows
 ```console
 cd /usr/lib/python3.6/site-packages/bt_router_scraper
-python3 /bt_router_scraper.py
+python3 bt_router_scraper.py
 ```
 ## How to view GUI
  
