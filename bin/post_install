@@ -1,0 +1,21 @@
+echo "[*] Post installing bt_router_scraper"
+
+# Create state file: current
+if [ -f /var/bt_router_scraper/state/current ] ; then
+    echo "[*] /var/bt_router_scraper/state/current already exists."
+else
+    echo "[*] Creating /var/bt_router_scraper/state/current"
+    touch /var/bt_router_scraper/state/current
+fi
+
+# Create state file: history
+if [ -f /var/bt_router_scraper/state/history ] ; then
+    echo "[*] /var/bt_router_scraper/state/history already exists."
+else
+    echo "[*] Creating /var/bt_router_scraper/state/history"
+    touch /var/bt_router_scraper/state/history
+fi
+echo "[*] Making configurable files read write to all"
+chmod a+rw /var/bt_router_scraper/config/friendly_names.json
+chmod a+rw /var/bt_router_scraper/state/current
+chmod a+rw /var/bt_router_scraper/state/history

@@ -1,0 +1,90 @@
+.datepicker {
+	font: 300 15px/1.5 "Helvetica Neue", mplus-2c, Helvetica, Arial, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif; border-radius: 3px; border: 1px solid rgb(223, 223, 223); border-image: none; display: inline-block; font-size-adjust: none; font-stretch: normal; box-shadow: 0.5px 0.5px 0px #c8c8c8; -webkit-border-radius: 3px; -moz-border-radius: 3px; -webkit-box-shadow: 0.5px 0.5px 3px #eeeeee; -moz-box-shadow: 0.5px 0.5px 3px #eeeeee;
+}
+.datepicker > .datepicker_header {
+	padding: 2px 5px; text-align: center; color: rgb(63, 63, 63); font-size: 9pt; font-weight: bold; background-color: rgb(238, 238, 238); user-select: none; -webkit-user-select: none; -moz-user-select: none;
+}
+.datepicker > .datepicker_header > a {
+	color: rgb(59, 119, 150); cursor: pointer; user-select: none; -webkit-user-select: none; -moz-user-select: none;
+}
+.datepicker > .datepicker_header > a:hover {
+	color: rgb(48, 48, 48); background-color: rgb(200, 200, 200);
+}
+.datepicker > .datepicker_header > a:active {
+	color: rgb(255, 255, 255); background-color: rgb(128, 128, 128);
+}
+.datepicker > .datepicker_header > span {
+	margin-right: 20px; margin-left: 20px; user-select: none; -webkit-user-select: none; -moz-user-select: none;
+}
+.datepicker > .datepicker_header > .icon-home {
+	width: 11pt; height: 11pt; margin-top: 2px; margin-left: 5px; vertical-align: middle; float: left; display: block; position: absolute;
+}
+.datepicker > .datepicker_header > .icon-home > svg > g > path {
+	fill: #3b7796;
+}
+.datepicker > .datepicker_header > a:hover > svg > g > path {
+	fill: #303030;
+}
+.datepicker > .datepicker_inner_container {
+	margin: -2px 0px; border-radius: 3px; border: 1px solid rgb(200, 200, 200); border-image: none; box-shadow: 0.5px 0px 3px #c8c8c8; background-color: rgb(210, 210, 210); -webkit-border-radius: 3px; -moz-border-radius: 3px; -webkit-box-shadow: 0.5px 0px 3px #c8c8c8; -moz-box-shadow: 0.5px 0px 3px #c8c8c8;
+}
+.datepicker > .datepicker_inner_container::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar {
+	border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(200, 200, 200) rgb(200, 200, 200); border-image: none; width: auto; margin-top: -0.5px; margin-bottom: -2px; margin-left: -1px; float: left; border-top-left-radius: 3px; border-bottom-left-radius: 3px; background-color: rgb(255, 255, 255); -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > table {
+	padding: 10px;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > th {
+	width: 18px; text-align: center; color: rgb(100, 100, 100); font-size: small; font-weight: normal;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td {
+	text-align: center; color: rgb(0, 0, 0); font-size: small; cursor: pointer; user-select: none; -webkit-user-select: none; -moz-user-select: none;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.today {
+	margin-bottom: -2px; border-bottom-color: rgb(191, 191, 191); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.wday_sat {
+	color: rgb(0, 68, 170);
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.wday_sun {
+	color: rgb(225, 59, 0);
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_another_month {
+	color: rgb(204, 204, 204);
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_in_past {
+	color: rgb(204, 204, 204); cursor: default;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.day_in_unallowed {
+	color: rgb(204, 204, 204); cursor: default;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.out_of_range {
+	color: rgb(204, 204, 204); cursor: default;
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.active {
+	color: rgb(255, 255, 255); background-color: rgb(128, 128, 128);
+}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.hover {
+	color: rgb(0, 0, 0); background-color: rgb(200, 200, 200);
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist {
+	padding: 5px 0px; width: 4.2em; height: 118px; overflow: auto; margin-top: -0.5px; float: left; -ms-overflow-x: hidden; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background-color: rgb(255, 255, 255); -webkit-border-top-right-radius: 3px; -webkit-border-bottom-right-radius: 3px; -moz-border-radius-topright: 3px; -moz-border-radius-bottomright: 3px;
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item {
+	padding: 1px 25px 1px 7px; font-size: small; margin-top: 5px; margin-bottom: 2px; cursor: pointer; user-select: none; -webkit-user-select: none; -moz-user-select: none;
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.time_in_past.timelist_item {
+	color: rgb(204, 204, 204); cursor: default;
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.out_of_range.timelist_item {
+	color: rgb(204, 204, 204); cursor: default;
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.active.timelist_item {
+	color: rgb(255, 255, 255); background-color: rgb(128, 128, 128);
+}
+.datepicker > .datepicker_inner_container > .datepicker_timelist > div.hover.timelist_item {
+	color: rgb(0, 0, 0); background-color: rgb(200, 200, 200);
+}

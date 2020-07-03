@@ -1,0 +1,13 @@
+{
+    "frequency":  300,
+    "router": "http://192.168.1.254",
+    "state_file": "/var/bt_router_scraper/state/current",
+    "history_file": "/var/bt_router_scraper/state/history",
+    "log_file": "/var/log/bt_router_scraper/all.log",
+    "alerts_smtp_address": "smtp.live.com",
+    "alerts_smtp_port": 587,
+    "alerts_username": null,
+    "alerts_password": null,
+    "alerts_conf": "/var/bt_router_scraper/config/email_alerts.json",
+    "friendly_names": "/var/bt_router_scraper/config/friendly_names.json"
+}

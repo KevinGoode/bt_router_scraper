@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><HTML><HEAD><META content="IE=11.0000" http-equiv="X-UA-Compatible">	 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<TITLE>BT Network Usage</TITLE>
+
+<LINK href="jquery-ui.css" rel="stylesheet" type="text/css">
+<LINK href="jquery-ui-timepicker-addon.css" rel="stylesheet" type="text/css">
+<LINK href="bt.css" rel="stylesheet" type="text/css">
+<SCRIPT language="javascript" src="jquery.js" type="text/javascript"></SCRIPT>
+<SCRIPT language="javascript" src="jquery.flot.js" type="text/javascript"></SCRIPT>
+<SCRIPT language="javascript" src="jquery.flot.time.js" type="text/javascript"></SCRIPT>
+<script src="jquery-ui.js"></script>
+<script src="jquery-ui-timepicker-addon.js"></script>
+<script src="jquery-ui-sliderAccess.js"></script>
+<script src="main.js"></script>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17207"></HEAD> 
+<BODY>
+
+
+
+<DIV id="content">
+<table width="900" align="center">
+<tr><td align="center"><DIV id="header"><H2>BT Network Usage</H2></DIV></td></tr>
+</table>
+<br/>
+<table width="900" align="center">
+<tr>
+<td align="left"><label for="'start-time' ">Start Time</label><input type="text" id='start-time' name="Start Time" value=""></td>
+<td align="right"><label for="'end-time' ">End Time</label><input type="text" id='end-time' name="EndTime" value=""></td>
+<td><input type="button" id="btn_refresh" value="Refresh"></td>
+</tr>
+</table>
+<DIV class="demo-container">
+<DIV class="demo-placeholder" id="placeholder"></DIV></DIV>
+
+
+<br/>
+<table width="900" align="center"><tr><td align="center">
+<select id="graphType" style="font-size:18px;">
+<optgroup style="font-size:18px;">
+</optgroup>
+</select>
+</td>
+<td align="center"><input id="nicename" style="width:150px" value=""/></td>
+<td align="center"><input id="changename" type="button" value="Change Name" /></td>
+<td align="center"> Total Time:</td>
+<td align="center"><input id="duration" readonly="true"/></td>
+</tr>
+</table>
+
+</DIV>
+<DIV id="footer"> Copyright 2016 K. Goode. Powered by Raspberry Pi
+<img src="pi.bmp"  height="32" width="32">
+</DIV></BODY></HTML>

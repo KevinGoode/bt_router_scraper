@@ -1,0 +1,17 @@
+echo "[*] Pre installing bt_router_scraper"
+
+# Create bt_router_scraper log directory
+if [ -d /var/log/bt_router_scraper ] ; then
+    echo "[*] Log directory /var/log/bt_router_scraper exists."
+else
+    echo "[*] Creating bt_router_scraper log directory /var/log/bt_router_scraper ."
+    mkdir -p /var/log/bt_router_scraper
+fi
+
+# Create bt_router_scraper state directory
+if [ -d /var/bt_router_scraper/state ] ; then
+    echo "[*] State directory /var/bt_router_scraper/state exists."
+else
+    echo "[*] Creating bt_router_scraper state directory /var/bt_router_scraper/state."
+    mkdir -p /var/bt_router_scraper/state
+fi
