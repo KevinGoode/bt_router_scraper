@@ -7,7 +7,7 @@ FROM centos:7
 
 # Set up proxies for the image build process
 # I'm sure there's a way to do this on the host, but I couldn't find it.
-RUN echo "proxy=$http_proxy" >> /etc/yum.conf
+RUN if [ "$http_proxy" = "" ]; then echo "No Proxy set"; else echo "proxy=$http_proxy" >> /etc/yum.conf ; fi
 ENV http_proxy=$http_proxy
 ENV https_proxy=$https_proxy
 
